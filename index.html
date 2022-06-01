@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>yoroshikuonegaishimasu</title>
+  </head>
+  <header>
+      <h1 class="headline">
+          <a>よろしく御願いします.exe</a>
+      </h1>
+      <h1>
+          <a><font size="3">45°を目指そう！<font></a>
+      </h1>
+  </header>
+  <body style="text-align: center">
+      <canvas id="unity-canvas" width=640 height=480 style="width: 640px; height: 480px; background: #231F20"></canvas>
+      <script src="Build/yoroshiku.loader.js"></script>
+      <script>createUnityInstance(document.querySelector("#unity-canvas"), {
+              dataUrl: "Build/yoroshiku.data.br",
+              frameworkUrl: "Build/yoroshiku.framework.js.br",
+              codeUrl: "Build/yoroshiku.wasm.br",
+              streamingAssetsUrl: "StreamingAssets",
+              companyName: "DefaultCompany",
+              productName: "yoroshiku",
+              productVersion: "1.0",
+              // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+              // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+          });</script>
+  </body>
+</html>
